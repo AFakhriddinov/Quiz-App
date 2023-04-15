@@ -104,10 +104,19 @@ function quiz(event) {
     }
 
     if (count <= 1) {
-      document.getElementById("results").innerHTML = "Correct answer: " + count;
+      document.getElementById("correctAnswers").innerHTML =
+        "Correct answer: " + count;
     } else {
-      document.getElementById("results").innerHTML =
+      document.getElementById("correctAnswers").innerHTML =
         "Correct answers: " + count;
+    }
+
+    if (10 - count <= 1) {
+      document.getElementById("incorrectAnswers").innerHTML =
+        "Incorrect answer: " + (10 - count);
+    } else {
+      document.getElementById("incorrectAnswers").innerHTML =
+        "Incorrect answers: " + (10 - count);
     }
   }
 }
