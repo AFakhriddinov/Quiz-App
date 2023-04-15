@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+    <title>Quiz</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <form id="form1">
+        <legend>Quiz</legend>
+        <p>Question 1: Calculate 5*2</p>
+        <input type="radio" name="options1" class="quiz" value="10" />10
+        <input type="radio" name="options1" class="quiz" value="15" />15
+        <input type="radio" name="options1" class="quiz" value="25" />25
+
+        <p>Question 2: Calculate 50-5</p>
+        <input type="radio" name="options2" class="quiz" value="35" />35
+        <input type="radio" name="options2" class="quiz" value="45" />45
+        <input type="radio" name="options2" class="quiz" value="10" />10
+
+        <p>Question 3: Calculate 40+30</p>
+        <input type="radio" name="options3" class="quiz" value="60" />60
+        <input type="radio" name="options3" class="quiz" value="70" />70
+        <input type="radio" name="options3" class="quiz" value="25" />25
+
+        <p>Question 4: Calculate 10+10</p>
+        <input type="radio" name="options4" class="quiz" value="20" />20
+        <input type="radio" name="options4" class="quiz" value="50" />50
+        <input type="radio" name="options4" class="quiz" value="65" />65
+
+        <p>Question 5: Calculate 4/2</p>
+        <input type="radio" name="options5" class="quiz" value="6" />6
+        <input type="radio" name="options5" class="quiz" value="7" />7
+        <input type="radio" name="options5" class="quiz" value="2" />2
+      </form>
+
+      <form id="form2">
+        <p>Question 6: Calculate 4*3</p>
+        <input type="radio" name="options6" class="quiz" value="4" />4
+        <input type="radio" name="options6" class="quiz" value="12" />12
+        <input type="radio" name="options6" class="quiz" value="58" />58
+
+        <p>Question 7: Calculate 70-30</p>
+        <input type="radio" name="options7" class="quiz" value="40" />40
+        <input type="radio" name="options7" class="quiz" value="10" />10
+        <input type="radio" name="options7" class="quiz" value="85" />85
+
+        <p>Question 8: Calculate 10*10</p>
+        <input type="radio" name="options8" class="quiz" value="90" />90
+        <input type="radio" name="options8" class="quiz" value="20" />20
+        <input type="radio" name="options8" class="quiz" value="100" />100
+
+        <p>Question 9: Calculate 90+30</p>
+        <input type="radio" name="options9" class="quiz" value="80" />80
+        <input type="radio" name="options9" class="quiz" value="120" />120
+        <input type="radio" name="options9" class="quiz" value="89" />89
+
+        <p>Question 10: Calculate 20*(5+5)</p>
+        <input type="radio" name="options10" class="quiz" value="100" />100
+        <input type="radio" name="options10" class="quiz" value="230" />230
+        <input type="radio" name="options10" class="quiz" value="200" />200
+        <br /><br />
+        <button id="submit" type="submit" onclick="quiz(event)">
+          Check results
+        </button>
+        <br />
+        <p id="results"></p>
+      </form>
+    </div>
+  </body>
+</html>
